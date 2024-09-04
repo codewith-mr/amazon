@@ -1,0 +1,21 @@
+<svg id="Working_Layer" data-name="Working Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <ellipse class="cls-1" cx="18.05" cy="16.07" rx="3.45" ry="3.43"/>
+      <line class="cls-1" x1="18.05" y1="14.7" x2="18.05" y2="17.44"/>
+      <line class="cls-1" x1="16.67" y1="16.07" x2="19.43" y2="16.07"/>
+    </g>
+    <path class="cls-1" d="M14.38,12.43a5,5,0,0,0-9.89,1.36v4.4"/>
+    <ellipse class="cls-1" cx="9.53" cy="5.62" rx="3.11" ry="3.12"/>
+  </g>
+</svg>

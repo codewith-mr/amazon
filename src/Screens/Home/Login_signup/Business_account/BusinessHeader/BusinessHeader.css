@@ -1,0 +1,49 @@
+.nav {
+  padding: 10px;
+  width: 100%;
+  background: #001f3c;
+}
+.nav > div {
+  max-width: 1000px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav :where(img) {
+  height: 27px;
+}
+.nav > div > div {
+  display: flex;
+  gap: 1.2rem;
+}
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.tabs > p {
+  background-color: #001f3c;
+  height: 23px;
+  width: 23px;
+  border-radius: 30px;
+  margin: 0.5rem 0;
+  display: grid;
+  place-content: center;
+  color: #fff;
+  border: none;
+  border: 2px solid #fff;
+  font-weight: 400;
+}
+.tabs > span {
+  font-size: 14px;
+  color: #fff;
+}
+.nav > div > div > :first-child > p {
+  background-color: #fff;
+  color: #001f3c;
+  font-weight: 700;
+}
+.nav > div > div > :first-child > span {
+  font-weight: 700;
+}

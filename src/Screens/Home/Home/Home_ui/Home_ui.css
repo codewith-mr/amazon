@@ -1,0 +1,130 @@
+.home_container {
+  background-color: #e3e6e6 !important;
+  height: 100vh;
+}
+.home_ui {
+  /* background-color: yellowgreen; */
+  height: 100%;
+  max-width: 1500px !important;
+  padding: 0 !important;
+  /* position: relative !important; */
+}
+
+/* ========================================= */
+.custom_carousel1 {
+  position: absolute;
+  top: 1px;
+  left: 2px;
+}
+.custom_carousel1,
+.custom_carousel2 {
+  color: rgb(0, 0, 0) !important;
+  width: 20px !important;
+  height: 186px !important;
+  padding: 1.8rem !important;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.custom_carousel2 {
+  position: absolute;
+  top: 1px;
+  right: 2px;
+}
+.focus {
+  border: 2px solid #008296;
+  outline: 2px solid #fff;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  width: 0% !important;
+}
+.carousel_container {
+  background-color: tomato !important;
+  z-index: 1 !important;
+  position: relative;
+}
+.carousel_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #e3e6e6 0%, #ff000000 60%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ========================================= */
+
+.item_container {
+  /* background-color: yellowgreen !important; */
+  height: 100vh !important;
+  width: 100% !important;
+  position: absolute !important;
+  top: 88% !important;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.items_box {
+  height: 100%;
+  max-width: 1500px !important;
+  /* background-color: tomato; */
+  padding: 0 20px !important;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+}
+.box {
+  background-color: #ffffff;
+  height: 420px;
+  width: 350px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.box > h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.first_row,
+.second_row {
+  display: flex;
+  gap: 15px;
+  height: 210px;
+}
+.item_1 > p,
+.item_2 > p,
+.item_3 > p,
+.item_4 > p {
+  font-size: 12px;
+  margin: 0 0 27px 0;
+  line-height: 10px;
+}
+.item_1,
+.item_2,
+.item_3,
+.item_4 {
+  /* background-color: yellowgreen; */
+  height: 100%;
+  width: 50%;
+  cursor: pointer;
+}
+
+.img_box {
+  /* background-color: tomato; */
+  height: 116px !important;
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+}
+.img_box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

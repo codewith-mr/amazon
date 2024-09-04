@@ -1,0 +1,38 @@
+<svg id="Working_Layer" data-name="Working Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke: #fff;
+      }
+
+      .cls-1 {
+        stroke-linecap: round;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-linejoin: round;
+      }
+
+      .cls-2 {
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <line class="cls-1" x1="12.01" y1="2.5" x2="12.01" y2="5.95"/>
+      <line class="cls-1" x1="10.28" y1="4.23" x2="13.74" y2="4.23"/>
+    </g>
+    <line class="cls-1" x1="15.53" y1="5.95" x2="15.53" y2="8.32"/>
+    <line class="cls-1" x1="14.34" y1="7.13" x2="16.71" y2="7.13"/>
+    <line class="cls-1" x1="8.55" y1="5.95" x2="8.55" y2="8.32"/>
+    <line class="cls-1" x1="7.37" y1="7.14" x2="9.73" y2="7.14"/>
+  </g>
+  <g>
+    <polyline class="cls-2" points="9.24 10.85 9.35 10.9 14.8 13.74"/>
+    <polygon class="cls-3" points="6.49 12.36 11.97 9.56 17.43 12.36 14.76 13.72 11.97 15.15 6.49 12.36"/>
+    <polyline class="cls-3" points="6.49 12.35 6.49 17.77 11.97 20.56 11.97 15.15"/>
+    <polyline class="cls-3" points="17.45 12.35 17.45 17.77 11.97 20.56"/>
+  </g>
+</svg>

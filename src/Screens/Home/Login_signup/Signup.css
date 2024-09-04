@@ -1,0 +1,160 @@
+.signup_container {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 0 0 1.5rem 0;
+  position: relative;
+}
+.signup_container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 0%,
+    rgb(238, 238, 238) 50%,
+    rgb(255, 255, 255) 100%
+  );
+  pointer-events: none;
+}
+.form_container {
+  width: 350px;
+  border-radius: 8px;
+  border: none;
+  border: 1px solid rgba(204, 204, 204, 0.616);
+  padding: 0.8rem 1.1rem;
+  background-color: #fff;
+}
+.form_container > h2 {
+  font-size: 1.8rem;
+  font-weight: normal;
+  margin: 0 0 1rem 0;
+}
+.form_container > span {
+  display: flex;
+  flex-direction: column;
+}
+.form_container > span > label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  padding: 0 0 2px 2px;
+}
+.form_container > :not(:first-child, :nth-child(2), :nth-child(5)) {
+  padding: 1rem 0 0 0;
+}
+.form_container > span > label::first-letter {
+  text-transform: capitalize;
+}
+.form_container > span > input {
+  width: 100%;
+  height: 30px;
+  border-radius: 3px;
+  border: none;
+  border: 1px solid rgb(168, 168, 168);
+  padding: 5px 5px 6px 7px;
+  outline: none;
+  font-size: 14px;
+}
+.form_container > span > input:focus {
+  border: 1px solid #007185;
+  outline: 3px solid #00bfe049;
+  background-color: #00bee010;
+}
+.form_container > span > input::placeholder {
+  font-size: 14px;
+}
+.form_container > span > p {
+  font-size: 12px;
+  padding: 5px 0 0 0;
+}
+.form_container > button {
+  all: unset;
+  background-color: #ffd814;
+  width: 100%;
+  text-align: center;
+  padding: 6px 0 !important;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 1rem 0 0.6rem 0;
+}
+.form_container > button:hover {
+  background-color: #f3cc07;
+}
+.form_container > p {
+  font-size: 12px;
+}
+.form_container > p > span {
+  color: #0066c0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.form_container > p > span:hover {
+  color: #c42e00;
+}
+.form_container > hr {
+  margin: 1.7rem 0 0 0;
+  color: #acacac;
+}
+.buyingfor_work {
+  height: 50px;
+  width: 100%;
+  padding: 0 !important;
+  position: relative;
+  overflow: hidden;
+}
+.buyingfor_work::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 0%,
+    rgb(230, 230, 230) 50%,
+    rgb(255, 255, 255) 100%
+  );
+  pointer-events: none;
+}
+.buyingfor_work > h5 {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600 !important;
+  margin: 0;
+}
+.buyingfor_work > span {
+  font-size: 13px;
+  color: #0066c0;
+  cursor: pointer;
+}
+.buyingfor_work > span:hover {
+  color: #c42e00;
+  text-decoration: underline;
+}
+.signin_option > p {
+  font-size: 13px;
+}
+.signin_option > p > span {
+  color: #0066c0;
+  cursor: pointer;
+  padding: 0 5px;
+}
+.signin_option > p > span:hover {
+  color: #c42e00;
+  text-decoration: underline;
+  background-color: #00000000;
+}
+/* .signin_btn {
+  cursor: pointer;
+  color: blue;
+} */

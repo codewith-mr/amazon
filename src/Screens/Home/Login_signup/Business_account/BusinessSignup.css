@@ -1,0 +1,153 @@
+body {
+  background-color: #fafafa;
+}
+
+/* ====== form-container ======= */
+
+.form-container {
+  height: 86vh;
+  max-width: 1000px !important;
+  display: flex;
+  justify-content: center;
+  padding: 0 4rem !important;
+}
+.form-container > :first-child {
+  border: 1px solid rgba(192, 192, 192, 0.979);
+  height: 65%;
+  width: 50%;
+  margin-top: 6rem !important;
+  padding: 1.6rem 2.7rem;
+}
+.form-container > :first-child > p {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.form-container > :first-child > label {
+  font-weight: 500;
+  color: rgb(41, 41, 41);
+}
+.form-container > :first-child > input {
+  width: 100%;
+  margin: 5px 0 0 0;
+  border: 2px solid gray;
+  height: 33px !important;
+  outline: none;
+}
+.form-container > :first-child > input:focus {
+  border: 2px solid #007185;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #025491;
+}
+.form-container > :first-child > input::placeholder {
+  font-weight: 500;
+  padding: 0 0 0 5px;
+}
+
+.form-container > :first-child > button {
+  all: unset;
+  width: 100%;
+  margin: 15px 0 0 0;
+  background-color: #ff9900;
+  text-align: center;
+  padding: 5px 0;
+  outline: none;
+  cursor: pointer;
+}
+.form-container > :first-child > button:hover {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #025491;
+}
+.form-container > :first-child > h5 {
+  font-size: 16.5px;
+  margin: 1.3rem 0 0 0;
+  font-weight: 400;
+}
+.form-container > :first-child > h5 > span {
+  color: #0081e4 !important;
+  cursor: pointer;
+}
+.form-container > :first-child > h5 > span:hover {
+  color: #c42e00 !important;
+  text-decoration: underline;
+}
+
+/*  */
+.form-container > :nth-child(2) {
+  background-color: #001f3c;
+  height: 65%;
+  width: 50%;
+  margin-top: 6rem !important;
+  position: relative;
+}
+.form-container > :nth-child(2) > p {
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding: 1.2rem 1.4rem 0.6rem 1.4rem;
+}
+.detail {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  margin: 0 0 10px 0;
+
+  padding: 0 1.4rem !important;
+}
+.detail > :first-child {
+  height: 100%;
+  width: 60px;
+}
+.detail > :nth-child(2) {
+  max-width: 332px;
+  line-height: 20px;
+}
+.detail > :first-child > img {
+  height: 48px;
+}
+.detail > :nth-child(2) > h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 5px 0;
+}
+.detail > :nth-child(2) > p {
+  color: #fff;
+  font-size: 12px;
+}
+.Image {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.Image > img {
+  height: 85px;
+}
+.learn_more {
+  height: 40px;
+  width: 100%;
+  background-color: #0d2c49;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.learn_more > span {
+  display: flex;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  height: 20px;
+}
+.learn_more > span > p {
+  font-size: 12px;
+  padding: 18px 0 0 0;
+}
+.learn_more > span > p:hover {
+  text-decoration: underline;
+}
+.learn_more > span :nth-child(2) {
+  font-size: 14px;
+}

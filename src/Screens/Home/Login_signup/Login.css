@@ -1,0 +1,185 @@
+.signin_container {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 0 0 1.5rem 0;
+  position: relative;
+}
+.signin_container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 0%,
+    rgb(238, 238, 238) 50%,
+    rgb(255, 255, 255) 100%
+  );
+  pointer-events: none;
+}
+.signin_form_container {
+  width: 350px;
+  border-radius: 8px;
+  border: none;
+  border: 1px solid rgba(204, 204, 204, 0.616);
+  padding: 0.9rem 1.6rem 0.6rem 1.6rem !important;
+  background-color: #fff;
+}
+.signin_form_container > h2 {
+  font-size: 1.8rem;
+  font-weight: normal;
+  margin: 0 0 1rem 0;
+}
+.signin_form_container > span {
+  display: flex;
+  flex-direction: column;
+}
+.signin_form_container > span > label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  padding: 0 0 2px 2px;
+}
+.signin_form_container > :not(:first-child, :nth-child(2), :nth-child(5)) {
+  padding: 1rem 0 0 0;
+}
+.signin_form_container > span > label::first-letter {
+  text-transform: capitalize;
+}
+.signin_form_container > span > input {
+  width: 100%;
+  height: 30px;
+  border-radius: 3px;
+  border: none;
+  border: 1px solid rgb(168, 168, 168);
+  padding: 5px 5px 6px 7px;
+  outline: none;
+  font-size: 14px;
+}
+.signin_form_container > span > input:focus {
+  border: 1px solid #007185;
+  outline: 3px solid #00bfe049;
+  background-color: #00bee010;
+}
+.signin_form_container > span > input::placeholder {
+  font-size: 14px;
+}
+.signin_form_container > span > p {
+  font-size: 12px;
+  padding: 5px 0 0 0;
+}
+.signin_form_container > button {
+  all: unset;
+  background-color: #ffd814;
+  width: 100%;
+  text-align: center;
+  padding: 6px 0 !important;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 1rem 0 0 0 !important;
+}
+.signin_form_container > button:hover {
+  background-color: #f3cc07;
+}
+.signin_form_container > p {
+  font-size: 12px;
+}
+.signin_form_container > p > span {
+  color: #0066c0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.signin_form_container > p > span:hover {
+  color: #c42e00;
+}
+.signin_form_container h3 {
+  font-size: 13px;
+}
+.signin_form_container > hr {
+  margin: 1.1rem 0 0 0;
+  color: #acacac;
+}
+.need_help {
+  display: flex;
+  gap: 8px;
+  padding: 10px 0 0 0;
+  width: 80px;
+}
+.need_help > h3 {
+  font-weight: 400;
+  color: #0066c0;
+  cursor: pointer;
+}
+.need_help > h3:hover,
+.buyingfor_work2 > span:hover,
+.options > p:hover {
+  color: #c42e00;
+  text-decoration: underline;
+}
+.buyingfor_work2 {
+  height: 50px;
+  width: 100%;
+  padding: 0 !important;
+  position: relative;
+  overflow: hidden;
+}
+.buyingfor_work2 > h5 {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600 !important;
+  margin: 0;
+}
+.buyingfor_work2 > span {
+  font-size: 13px;
+  color: #0066c0;
+  cursor: pointer;
+}
+.newto {
+  height: 20px;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 14px 0 5px 0;
+}
+.newto > hr {
+  color: #8a8a8a;
+  height: 5px;
+  width: 40%;
+  margin: 5px 0 0 0;
+}
+.newto > span {
+  color: #777777;
+  text-wrap: nowrap;
+  font-size: 12px;
+}
+.signin_container > button {
+  all: unset;
+  width: 350px;
+  border: none;
+  border: 1px solid rgb(212, 212, 212);
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(211, 211, 211, 0.452);
+  font-size: 13px;
+  border-radius: 6px;
+  text-align: center;
+  padding: 4px 0;
+}
+.options {
+  padding: 0 !important;
+  margin-left: 14px;
+}
+.options > p {
+  margin: 0 0 5px 0;
+  font-size: 13px;
+  color: #0066c0;
+  cursor: pointer;
+}

@@ -1,0 +1,19 @@
+<svg id="Working_Layer" data-name="Working Layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-1" d="M12.33,6,6.67,6.7,6,12.36l7.69,7.69a1.55,1.55,0,0,0,2.18,0L20,15.89a1.55,1.55,0,0,0,0-2.18Z"/>
+    <path class="cls-1" d="M6.35,3.44c2.14.81,2.85,2.44,2.13,5"/>
+    <line class="cls-1" x1="13.04" y1="15.82" x2="13.04" y2="10.12"/>
+    <circle class="cls-1" cx="15.31" cy="12.4" r="0.8"/>
+    <circle class="cls-1" cx="10.77" cy="13.54" r="0.8"/>
+  </g>
+</svg>

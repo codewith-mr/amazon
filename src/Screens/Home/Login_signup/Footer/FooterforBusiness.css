@@ -1,0 +1,18 @@
+.business_footer {
+  max-width: 1000px;
+  height: 7vh;
+  padding: 12px 5.5rem;
+}
+.business_footer > p {
+  font-size: 12px;
+  color: rgb(73, 73, 73);
+  margin: 0 0 5px 0;
+}
+.business_footer > p > span {
+  color: #0081e4;
+  cursor: pointer;
+}
+.business_footer > span {
+  font-size: 12px;
+  color: rgb(73, 73, 73);
+}

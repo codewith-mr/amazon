@@ -1,0 +1,36 @@
+.mini_navbar {
+  background-color: #232f3e;
+  height: 36px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 15px;
+}
+.all {
+  height: 95%;
+  gap: 5px;
+  cursor: pointer;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.all:hover {
+  outline: 1px solid #fff;
+  border-radius: 2px;
+}
+.all > p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+}
+/* .deals {
+  background-color: violet;
+  height: 100%;
+}
+.deals > p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+} */
