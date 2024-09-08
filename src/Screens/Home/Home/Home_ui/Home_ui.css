@@ -1,13 +1,6 @@
-.home_container {
-  background-color: #e3e6e6 !important;
-  height: 100vh;
-}
 .home_ui {
-  /* background-color: yellowgreen; */
-  height: 100%;
   max-width: 1500px !important;
   padding: 0 !important;
-  /* position: relative !important; */
 }
 
 /* ========================================= */
@@ -58,7 +51,6 @@
 /* ========================================= */
 
 .item_container {
-  /* background-color: yellowgreen !important; */
   height: 100vh !important;
   width: 100% !important;
   position: absolute !important;
@@ -73,7 +65,6 @@
 .items_box {
   height: 100%;
   max-width: 1500px !important;
-  /* background-color: tomato; */
   padding: 0 20px !important;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -110,14 +101,12 @@
 .item_2,
 .item_3,
 .item_4 {
-  /* background-color: yellowgreen; */
   height: 100%;
   width: 50%;
   cursor: pointer;
 }
 
 .img_box {
-  /* background-color: tomato; */
   height: 116px !important;
   width: 100% !important;
   display: flex;

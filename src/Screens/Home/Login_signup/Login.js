@@ -1,10 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import "../Login_signup/Login.css";
 import Amazon_logo from "../../../Images/amazon_logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretRight, faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-const Login = ({ ToSwitchLogin }) => {
+const Login = () => {
   const firstInputRef = useRef(null);
   const [showOption, setShowOption] = useState(null);
 
@@ -19,6 +22,8 @@ const Login = ({ ToSwitchLogin }) => {
       firstInputRef.current.focus();
     }
   }, []);
+
+  const notify = () => toast("SIGN-UP PAGE");
 
   return (
     <div className="signin_container">
@@ -60,7 +65,12 @@ const Login = ({ ToSwitchLogin }) => {
         <span>New to Amazon?</span>
         <hr />
       </div>
-      <button onClick={ToSwitchLogin}>Create your Amazon account</button>
+
+      <Link style={{ textDecoration: "none", color: "black" }} to={"/Signup"}>
+        <button className="signup_btn" onClick={notify}>
+          Create your Amazon account
+        </button>
+      </Link>
     </div>
   );
 };

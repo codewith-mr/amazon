@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../Home_ui/Home_ui.css";
 import { Carousel } from "react-bootstrap";
-import { items_boxes } from "../../../../Components/Utils/mock/Login_signup_data";
+import { items_boxes } from "../../../../Components/Utils/mock/Home_data";
 import ExampleCarouselImage1 from "../../../../Images/slider_img/toys.jpg";
 import ExampleCarouselImage2 from "../../../../Images/slider_img/beauty.jpg";
 import ExampleCarouselImage3 from "../../../../Images/slider_img/quest.jpg";
@@ -35,6 +35,10 @@ const Home_ui = () => {
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
+  }, []);
+
+  useEffect(() => {
+    document.body.style.setProperty("background-color", "#e3e6e6", "important");
   }, []);
 
   return (

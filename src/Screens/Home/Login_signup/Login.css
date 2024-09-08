@@ -161,7 +161,8 @@
   text-wrap: nowrap;
   font-size: 12px;
 }
-.signin_container > button {
+
+.signup_btn {
   all: unset;
   width: 350px;
   border: none;

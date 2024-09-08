@@ -143,18 +143,23 @@
 }
 .signin_option > p {
   font-size: 13px;
+  color: #000;
 }
-.signin_option > p > span {
+.link_signin {
+  text-decoration: none;
+  color: "#0066c0";
+}
+.link_signin > span {
   color: #0066c0;
   cursor: pointer;
   padding: 0 5px;
 }
-.signin_option > p > span:hover {
-  color: #c42e00;
+.link_signin > span > :first-child {
+  padding: 0 4px;
+  font-size: 9px;
+}
+.signin_btn:hover {
+  color: #c42e00 !important;
   text-decoration: underline;
   background-color: #00000000;
 }
-/* .signin_btn {
-  cursor: pointer;
-  color: blue;
-} */

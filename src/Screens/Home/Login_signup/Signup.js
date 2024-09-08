@@ -1,10 +1,12 @@
 import React, { useEffect, useRef } from "react";
 import "../Login_signup/Signup.css";
+import { Link } from "react-router-dom";
 import { signup_inputs } from "../../../Components/Utils/mock/Login_signup_data";
 import Amazon_logo from "../../../Images/amazon_logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 import business_account from "./Business_account/BusinessSignup";
+import { toast } from "react-toastify";
 
 const Signup = ({ ToSwitchSignup }) => {
   const firstInputRef = useRef(null);
@@ -16,6 +18,7 @@ const Signup = ({ ToSwitchSignup }) => {
       firstInputRef.current.focus();
     }
   }, []);
+  const notify = () => toast("LOGIN PAGE");
 
   return (
     <div className="signup_container">
@@ -56,13 +59,12 @@ const Signup = ({ ToSwitchSignup }) => {
         <div className="signin_option">
           <p>
             Already have an account?
-            <span onClick={ToSwitchSignup} className="signin_btn">
-              Sign in
-              <FontAwesomeIcon
-                style={{ fontSize: "10px" }}
-                icon={faCaretRight}
-              />
-            </span>
+            <Link className="link_signin" to={"/Login"}>
+              <span onClick={notify} className="signin_btn">
+                Sign in
+                <FontAwesomeIcon icon={faCaretRight} />
+              </span>
+            </Link>
           </p>
         </div>
       </div>
