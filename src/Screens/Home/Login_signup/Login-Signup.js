@@ -1,49 +1,51 @@
-import React, { useState } from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import React from "react";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import { useApp } from "../../../context/AppContext";
+import Home from "../Home/Home";
 import Login from "./Login";
 import Signup from "./Signup";
-import Footer from "./Footer/Footer";
-import Home from "../Home/Home";
-import { ToastContainer } from "react-toastify";
-
-const ProtectedRoute = ({ isAuthenticated, children }) => {
-  return isAuthenticated ? children : <Navigate to="/Login" />;
-};
+import { useSelector } from "react-redux";
 
 export const Login_signup = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const { handleLogin, handleLogout } = useApp();
 
-  const handleLogin = () => {
-    setIsAuthenticated(true);
-  };
+  const user = useSelector((state) => state.user);
 
-  const handleLogout = () => {
-    setIsAuthenticated(false);
-  };
+  const Authrouter = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home onLogout={handleLogout} />,
+    },
+    {
+      path: "*",
+      element: <Navigate to="/" />,
+    },
+  ]);
+
+  const unAuthRouter = createBrowserRouter([
+    {
+      path: "/",
+      element: <Login handleLogin={handleLogin} />,
+    },
+    {
+      path: "Signup",
+      element: <Signup onSignup={handleLogin} />,
+    },
+    {
+      path: "*",
+      element: <Navigate to="/" />,
+    },
+  ]);
 
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Navigate to="/Login" />} />
-        <Route path="/Login" element={<Login onLogin={handleLogin} />} />
-        <Route path="/Signup" element={<Signup onSignup={handleLogin} />} />
-
-        <Route
-          path="/home"
-          element={
-            <ProtectedRoute isAuthenticated={isAuthenticated}>
-              <Home onLogout={handleLogout} />
-            </ProtectedRoute>
-          }
-        />
-
-        <Route
-          path="*"
-          element={<Navigate to={isAuthenticated ? "/home" : "/Login"} />}
-        />
-      </Routes>
+      <RouterProvider router={user.isAuth ? Authrouter : unAuthRouter} />
       <ToastContainer />
-      <Footer />
     </>
   );
 };

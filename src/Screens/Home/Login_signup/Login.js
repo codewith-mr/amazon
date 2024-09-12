@@ -1,29 +1,29 @@
-import React, { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
-import "../Login_signup/Login.css";
-import Amazon_logo from "../../../Images/amazon_logo.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretRight, faCaretDown } from "@fortawesome/free-solid-svg-icons";
-import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import React, { useEffect, useRef, useState } from "react"
+import { Link } from "react-router-dom"
+import "../Login_signup/Login.css"
+import Amazon_logo from "../../../Images/amazon_logo.png"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCaretRight, faCaretDown } from "@fortawesome/free-solid-svg-icons"
+import { toast } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 
-const Login = () => {
-  const firstInputRef = useRef(null);
-  const [showOption, setShowOption] = useState(null);
+const Login = ({ handleLogin }) => {
+  const firstInputRef = useRef(null)
+  const [showOption, setShowOption] = useState(null)
 
   const handleShowOption = () => {
-    setShowOption(!showOption);
-  };
+    setShowOption(!showOption)
+  }
 
   useEffect(() => {
-    document.title = "Amazon Sign-In";
+    document.title = "Amazon Sign-In"
 
     if (firstInputRef.current) {
-      firstInputRef.current.focus();
+      firstInputRef.current.focus()
     }
-  }, []);
+  }, [])
 
-  const notify = () => toast("SIGN-UP PAGE");
+  const notify = () => toast("SIGN-UP PAGE")
 
   return (
     <div className="signin_container">
@@ -36,7 +36,7 @@ const Login = () => {
           <input ref={firstInputRef} type="email" />
         </span>
 
-        <button>Continue</button>
+        <button onClick={handleLogin}>Continue</button>
         <p>
           By continuing, you agree to Amazon's
           <span> Conditions of Use </span> and <span> Privacy Notice. </span>
@@ -72,7 +72,7 @@ const Login = () => {
         </button>
       </Link>
     </div>
-  );
-};
+  )
+}
 
-export default Login;
+export default Login

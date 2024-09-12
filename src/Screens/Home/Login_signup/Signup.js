@@ -8,7 +8,7 @@ import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 import business_account from "./Business_account/BusinessSignup";
 import { toast } from "react-toastify";
 
-const Signup = ({ ToSwitchSignup }) => {
+const Signup = ({ onSignup }) => {
   const firstInputRef = useRef(null);
 
   useEffect(() => {
@@ -18,6 +18,7 @@ const Signup = ({ ToSwitchSignup }) => {
       firstInputRef.current.focus();
     }
   }, []);
+
   const notify = () => toast("LOGIN PAGE");
 
   return (
@@ -46,7 +47,7 @@ const Signup = ({ ToSwitchSignup }) => {
             )}
           </span>
         ))}
-        <button>Continue</button>
+        <button onClick={onSignup}>Continue</button>
         <p>
           By creating an account, you agree to Amazon's <br />
           <span> Conditions of Use </span> and <span> Privacy Notice. </span>
