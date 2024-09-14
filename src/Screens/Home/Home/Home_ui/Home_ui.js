@@ -10,6 +10,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
+import Footer from "../../../../Components/Footer/Footer";
 
 const Home_ui = () => {
   const [newClass, setNewClass] = useState(null);
@@ -143,6 +144,7 @@ const Home_ui = () => {
               </div>
             ))}
           </div>
+          <Footer />
         </div>
       </div>
     </div>
